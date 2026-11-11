@@ -28,6 +28,11 @@
   src: url(../assets/fonts/Digi\ Lalezar\ Plus.ttf);
 }
 
+input::placeholder{
+  font-family: 'header-font';
+  font-weight: 900;
+  font-size: xx-large;
+}
 
 
 
@@ -42,17 +47,29 @@ p, span{
 body {
   background-color: var(--accent);
   direction: rtl;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+}
+.logo-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 nav {
-  padding: 15px 190px;
+  padding: 15px 120px;
   background-color: var(--primary);
   color: var(--text-light);
   display: flex;
   flex-direction: column;
   height: 200px;
-  width: 100%;
+  width: 90%;
+  border-radius: 45px;
+  margin: 45px 0px;
   align-items: center;
 
 
@@ -80,7 +97,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 100px;
 }
 
 nav a{
@@ -88,6 +105,9 @@ nav a{
     font-size: xx-large;
     text-decoration: none;
     font-weight: 900;
+    /* border: var(--border);
+    padding: 0px 16px;
+    border-radius: 999px; */
 
 }
 nav img{
@@ -95,6 +115,7 @@ nav img{
   height: 100px;
   mix-blend-mode: multiply;
 }
+
 
 .register{
   background-color: var(--accent);
@@ -127,7 +148,6 @@ nav i{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
 }
 
 input{
@@ -138,6 +158,27 @@ input{
   padding: 10px;
   color: var(--text-dark);
   border: 3px solid var(--accent);
-  
+}
+.accent-button{
+  background-color: var(--secendary);
+  color: var(--text-dark);
+  border-radius: 999px;
+  padding: 0px 18px;
+  border: var(--border);
+  transition: all 0.5s;
 
+}
+
+.accent-button:hover{
+  background-color: var(--primary);
+}
+
+header{
+  width: 90%;
+  margin-bottom: 25px;
+}
+header img{
+  
+  width: 100%;
+  border-radius: 45px;
 }
