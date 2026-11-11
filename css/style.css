@@ -12,6 +12,7 @@
     --accent: #2A1A0E;
     --text-dark: #2A1A0E;
     --text-light: #FEF3E2;
+    --border: 3px solid var(--accent);
 
    /* --shadow: 4px 4px 15px 10px black; */
 }
@@ -39,35 +40,62 @@ p, span{
 
 
 body {
-  background-color: var(--primary);
+  background-color: var(--accent);
   direction: rtl;
 }
 
 
 nav {
-  background-color: var(--secendary); 
-  width: 90%;
-  height: 150px;
-  margin: 15px auto;
-  border-radius: 35px;
-  border: 5px;
-  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.219);
-
+  padding: 15px 190px;
+  background-color: var(--primary);
+  color: var(--text-light);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 200px;
+  width: 100%;
   align-items: center;
-  padding: 0px 55px;
+
 
 }
 
+.top{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.bottom{
+  width: 100%;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
 nav a{
-    font-size: xx-large;
     color: var(--text-dark);
+    font-size: xx-large;
     text-decoration: none;
     font-weight: 900;
 
 }
+nav img{
+  width: 100px;
+  height: 100px;
+  mix-blend-mode: multiply;
+}
+
 .register{
   background-color: var(--accent);
   color: var(--text-light);
@@ -103,11 +131,13 @@ nav i{
 }
 
 input{
-  border-radius: 25px;
-  width: 30%;
+  border-radius: 250px;
+  width: 800px;
+  height: 70px;
   background-color: var(--secendary);
   padding: 10px;
   color: var(--text-dark);
   border: 3px solid var(--accent);
+  
 
 }
